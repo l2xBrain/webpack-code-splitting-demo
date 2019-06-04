@@ -1,0 +1,27 @@
+{
+  "name": "webpack-code-splitting-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:l2xBrain/webpack-code-splitting-demo.git",
+  "author": "刘力瑄 <l2xbrain@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "lodash": "^4.17.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "scripts": {
+    "build:mult_entry": "webpack --config mult_entry/webpack.config.js",
+    "build:vendor": "webpack --config vendor_module/webpack.config.js",
+    "build:dynamic_import": "webpack --config dynamic_import/webpack.config.js"
+  },
+  "devDependencies": {
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}
